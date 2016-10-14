@@ -6728,7 +6728,7 @@ body {
 .header {
   border-bottom: 1px solid #dddddd;
   background: white;
-  padding: 20px 0px 10px 0px;
+  padding: 30px 0px 10px 0px;
   margin-bottom: 60px;
 }
 .header .logo img {
@@ -6743,7 +6743,7 @@ body {
   color: #aaaaaa;
 }
 .header .menu ul {
-  padding-top: 3px;
+  padding-top: 5px;
 }
 .header .menu ul li {
   list-style: none;
