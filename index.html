@@ -226,21 +226,14 @@
                 <h4 class="modal-title" id="myModalLabel">Upload picture</h4>
             </div>
             <div class="modal-body">
+                <div id="upload-area">
+                    <form action="upload.php" class="dropzone" id="my-dropzone">
+                        <div class="dz-message needsclick">
+                            Drop files here or click to upload.
 
-                <form action="upload.php" class="dropzone" id="my-dropzone">
-                    <div class="dz-message needsclick">
-                        Drop files here or click to upload.
-
-                    </div>
-
-                    <div class="dz-filename">
-                        <span data-dz-name></span>
-                    </div>
-
-                    <div class="fallback">
-
-                    </div>
-                </form>
+                        </div>
+                    </form>
+                </div>
 
                 <div id="apply-filters">
                     <img id="uploaded-image" src="" alt="image uploaded by user" class="img-responsive "/>
@@ -248,36 +241,37 @@
                     <div class="filters row">
                         <div class="col-sm-3">
                             <a href="#"><img id="filter-1" src="" alt="image uploaded by user"
-                                 class="uploaded-image-thumb img-responsive"/></a>
+                                             class="uploaded-image-thumb img-responsive"/></a>
                             <div class="filter-labe">Normal</div>
                         </div>
                         <div class="col-sm-3">
                             <a href="#"><img id="filter-2" src="" alt="image uploaded by user"
-                                 class="uploaded-image-thumb img-responsive brannan"/></a>
+                                             class="uploaded-image-thumb img-responsive brannan"/></a>
                             <div class="filter-labe">Brannan</div>
                         </div>
                         <div class="col-sm-3">
                             <a href="#"><img id="filter-3" src="" alt="image uploaded by user"
-                                 class="uploaded-image-thumb img-responsive inkwell"/></a>
+                                             class="uploaded-image-thumb img-responsive inkwell"/></a>
                             <div class="filter-labe">Inkwell</div>
                         </div>
                         <div class="col-sm-3">
                             <a href="#"><img id="filter-4" src="" alt="image uploaded by user"
-                                 class="uploaded-image-thumb img-responsive _1977"/></a>
+                                             class="uploaded-image-thumb img-responsive _1977"/></a>
                             <div class="filter-labe">1977</div>
                         </div>
 
+                        <!--
                         <div class="col-sm-3">
                             <a href="#"><img id="filter-5" src="" alt="image uploaded by user"
-                                 class="uploaded-image-thumb img-responsive aden"/></a>
+                                             class="uploaded-image-thumb img-responsive aden"/></a>
                             <div class="filter-labe">Aden</div>
                         </div>
 
                         <div class="col-sm-3">
                             <a href="#"><img id="filter-6" src="" alt="image uploaded by user"
-                                 class="uploaded-image-thumb img-responsive brooklyn"/></a>
+                                             class="uploaded-image-thumb img-responsive brooklyn"/></a>
                             <div class="filter-labe">Brooklin</div>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -296,7 +290,6 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 
@@ -311,8 +304,8 @@
     //disable button until user uploads img
     $(document).ready(function () {
         $('#next-button').addClass("disabled");
-
-    })
+        $("#apply-filters").hide();
+    });
 
     //uploader class
     var uploader = new Dropzone('#my-dropzone');
@@ -327,6 +320,10 @@
         $("#next-button").click(function () {
             $("#uploaded-image").attr('src', 'uploads/' + file.name);
             $(".uploaded-image-thumb").attr('src', 'uploads/' + file.name);
+
+            $("#my-dropzone").hide();
+            $("#apply-filters").show();
+            $("#myModalLabel").html('Chose the filter');
 
             //apply filters
 
@@ -351,16 +348,20 @@
                 $("#uploaded-image").removeClass().addClass('img-responsive _1977');
             });
 
-            //brooklyn
+            //aden
             $("#filter-5").click(function () {
+                $("#uploaded-image").removeClass().addClass('img-responsive aden');
+            });
+
+            //brooklyn
+            $("#filter-6").click(function () {
                 $("#uploaded-image").removeClass().addClass('img-responsive brooklyn');
             });
 
-            //clarendon
-            $("#filter-2").click(function () {
-                $("#uploaded-image").removeClass().addClass('img-responsive clarendon');
-            });
 
+            $("#next-button").click(function () {
+                
+            });
         });
 
 
