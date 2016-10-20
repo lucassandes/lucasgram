@@ -6,208 +6,369 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>lucasgram . a simple instagram-like project</title>
 
     <!-- Bootstrap -->
     <link href="css/custom.css" rel="stylesheet">
 
+    <link href="css/dropzone.css" rel="stylesheet">
+
+    <!-- Filters  https://github.com/una/CSSgram -->
+    <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="col-md-2 logo">
-                <img src="imgs/lucasgram.png" class="img-responsive" alt="lucasgram" />
+<header class="header">
+    <div class="container">
+        <div class="col-md-2 logo">
+            <img src="imgs/lucasgram.png" class="img-responsive" alt="lucasgram"/>
+        </div>
+
+        <div class="col-md-7 ">
+
+
+            <div class="search col-md-5">
+                <div class="form-group  has-feedback ">
+
+                    <input type="text" class="form-control" id="inputSuccess4" placeholder="Search...">
+                    <span class="glyphicon glyphicon glyphicon-search form-control-feedback"></span>
+
+                </div>
             </div>
 
-            <div class="col-md-7 ">
-
-               
-                    <div class="search col-md-5">
-                        <div class="form-group  has-feedback ">
-                            
-                            <input type="text" class="form-control" id="inputSuccess4" placeholder="Search...">
-                            <span class="glyphicon glyphicon glyphicon-search form-control-feedback"></span>
-                                
-                        </div>
-                    </div>
-                
-
-            </div>
-
-
-            <div class="col-md-3 menu">
-                <ul>
-                    <li> <a href="#"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></a> </li>
-                    <li> <a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> </a></li>
-                    <li> <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> </a></li>
-                </ul>
-            </div>
 
         </div>
-    </header>
 
-    <div class="container">
-        <article class="post col-md-7 col-md-offset-2 ">
-            <header class="post-header row">
-                <div class="col-sm-11 ">
-                    <img src="imgs/profile1.jpg" class="img-responsive img-circle profile-thumb" alt="profile picture" />
-                    <strong>lucassandes</strong>
-                    <br/> São José dos Campos, SP
-                </div>
-                <div class="col-sm-1 text-right text-grey row">
-                    2h
-                </div>
-            </header>
+        <!-- Button trigger modal -->
 
-            <div class="row">
-                <img src="imgs/pic1.jpg" class="img-responsive" alt="picuture" />
-            </div>
-            <div class="col-sm-12">
-                <section>
-                    <a href="#" title="lucassandes">lucassandes</a>,
-                    <a href="#" title="giullyleao">giullyleao</a>,
-                    <a href="#" title="camilapaier">camilapaier</a> e
-                    <a href="#" title="nicolecaverzan">nicolecaverzan</a> curtiram isso
-                </section>
+        <div class="col-md-3 menu">
+            <ul>
+                <li><a href="#" data-toggle="modal" data-target="#uploadModal"><span
+                        class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> </a></li>
+            </ul>
+        </div>
 
-                <section>
-                    <ul>
-                        <li>
-                            <a href="#">lucassandes</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis erat.
-                        </li>
-
-                        <li>
-                            <a href="#">giullyleao</a> <span class="hashtag">@lucassandes</span> great!
-                        </li>
-
-                        <li>
-                            <a href="#">camilapaier</a> Praesent dictum sed quam nec vestibulum.
-                        </li>
-                    </ul>
-                </section>
-                <hr/>
-                <section>
-                    <div class="col-sm-1">
-                        <img src="imgs/heart-full.png" alt="heart" class="img-responsive heart" />
-                    </div>
-                    <div class="col-sm-11">
-                        <input type="text" class="no-border" placeholder="Adicione um comentário...">
-                    </div>
-                </section>
-            </div>
-        </article>
-
-        <article class="post col-md-7 col-md-offset-2 ">
-            <header class="post-header row">
-                <div class="col-sm-11 ">
-                    <img src="imgs/profile1.jpg" class="img-responsive img-circle profile-thumb" alt="profile picture" />
-                    <strong>lucassandes</strong>
-                    <br/> São José dos Campos, SP
-                </div>
-                <div class="col-sm-1 text-right text-grey row">
-                    2h
-                </div>
-            </header>
-
-            <div class="row">
-                <img src="imgs/pic4.jpg" class="img-responsive" alt="picuture" />
-            </div>
-            <div class="col-sm-12">
-                <section>
-                    <a href="#" title="lucassandes">lucassandes</a>,
-                    <a href="#" title="giullyleao">giullyleao</a>,
-                    <a href="#" title="camilapaier">camilapaier</a> e
-                    <a href="#" title="nicolecaverzan">nicolecaverzan</a> curtiram isso
-                </section>
-
-                <section>
-                    <ul>
-                        <li>
-                            <a href="#">lucassandes</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis erat.
-                        </li>
-
-                        <li>
-                            <a href="#">giullyleao</a> <span class="hashtag">@lucassandes</span> great!
-                        </li>
-
-                        <li>
-                            <a href="#">camilapaier</a> Praesent dictum sed quam nec vestibulum.
-                        </li>
-                    </ul>
-                </section>
-                <hr/>
-                <section>
-                    <div class="col-sm-1">
-                        <img src="imgs/heart-full.png" alt="heart" class="img-responsive heart" />
-                    </div>
-                    <div class="col-sm-11">
-                        <input type="text" class="no-border" placeholder="Adicione um comentário...">
-                    </div>
-                </section>
-            </div>
-        </article>
-
-        <article class="post col-md-7 col-md-offset-2 ">
-            <header class="post-header row">
-                <div class="col-sm-11 ">
-                    <img src="imgs/profile1.jpg" class="img-responsive img-circle profile-thumb" alt="profile picture" />
-                    <strong>lucassandes</strong>
-                    <br/> Highlands, Scotland
-                </div>
-                <div class="col-sm-1 text-right text-grey row">
-                    2h
-                </div>
-            </header>
-
-            <div class="row">
-                <img src="imgs/pic3.jpg" class="img-responsive" alt="picuture" />
-            </div>
-            <div class="col-sm-12">
-                <section>
-                    <a href="#" title="lucassandes">lucassandes</a>,
-                    <a href="#" title="giullyleao">giullyleao</a>,
-                    <a href="#" title="camilapaier">camilapaier</a> e
-                    <a href="#" title="nicolecaverzan">nicolecaverzan</a> curtiram isso
-                </section>
-
-                <section>
-                    <ul>
-                        <li>
-                            <a href="#">lucassandes</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis erat.
-                        </li>
-
-                        <li>
-                            <a href="#">giullyleao</a> <span class="hashtag">@lucassandes</span> great!
-                        </li>
-
-                        <li>
-                            <a href="#">camilapaier</a> Praesent dictum sed quam nec vestibulum.
-                        </li>
-                    </ul>
-                </section>
-                <hr/>
-                <section>
-                    <div class="col-sm-1">
-                        <img src="imgs/heart-full.png" alt="heart" class="img-responsive heart" />
-                    </div>
-                    <div class="col-sm-11">
-                        <input type="text" class="no-border" placeholder="Adicione um comentário...">
-                    </div>
-                </section>
-            </div>
-        </article>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+</header>
+
+<div class="container">
+    <article class="post col-md-7 col-md-offset-2 ">
+        <header class="post-header row">
+            <div class="col-sm-11 ">
+                <img src="imgs/profile1.jpg" class="img-responsive img-circle profile-thumb" alt="profile picture"/>
+                <strong>lucassandes</strong>
+                <br/> São José dos Campos, SP
+            </div>
+            <div class="col-sm-1 text-right text-grey row">
+                2h
+            </div>
+        </header>
+
+        <div class="row">
+            <img src="imgs/pic1.jpg" class="img-responsive" alt="picuture"/>
+        </div>
+        <div class="col-sm-12">
+            <section>
+                <a href="#" title="lucassandes">lucassandes</a>,
+                <a href="#" title="giullyleao">giullyleao</a>,
+                <a href="#" title="camilapaier">camilapaier</a> e
+                <a href="#" title="nicolecaverzan">nicolecaverzan</a> curtiram isso
+            </section>
+
+            <section>
+                <ul>
+                    <li>
+                        <a href="#">lucassandes</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        felis erat.
+                    </li>
+
+                    <li>
+                        <a href="#">giullyleao</a> <span class="hashtag">@lucassandes</span> great!
+                    </li>
+
+                    <li>
+                        <a href="#">camilapaier</a> Praesent dictum sed quam nec vestibulum.
+                    </li>
+                </ul>
+            </section>
+            <hr/>
+            <section>
+                <div class="col-sm-1">
+                    <img src="imgs/heart-full.png" alt="heart" class="img-responsive heart"/>
+                </div>
+                <div class="col-sm-11">
+                    <input type="text" class="no-border" placeholder="Adicione um comentário...">
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <article class="post col-md-7 col-md-offset-2 ">
+        <header class="post-header row">
+            <div class="col-sm-11 ">
+                <img src="imgs/profile1.jpg" class="img-responsive img-circle profile-thumb" alt="profile picture"/>
+                <strong>lucassandes</strong>
+                <br/> São José dos Campos, SP
+            </div>
+            <div class="col-sm-1 text-right text-grey row">
+                2h
+            </div>
+        </header>
+
+        <div class="row">
+            <img src="imgs/pic4.jpg" class="img-responsive" alt="picuture"/>
+        </div>
+        <div class="col-sm-12">
+            <section>
+                <a href="#" title="lucassandes">lucassandes</a>,
+                <a href="#" title="giullyleao">giullyleao</a>,
+                <a href="#" title="camilapaier">camilapaier</a> e
+                <a href="#" title="nicolecaverzan">nicolecaverzan</a> curtiram isso
+            </section>
+
+            <section>
+                <ul>
+                    <li>
+                        <a href="#">lucassandes</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        felis erat.
+                    </li>
+
+                    <li>
+                        <a href="#">giullyleao</a> <span class="hashtag">@lucassandes</span> great!
+                    </li>
+
+                    <li>
+                        <a href="#">camilapaier</a> Praesent dictum sed quam nec vestibulum.
+                    </li>
+                </ul>
+            </section>
+            <hr/>
+            <section>
+                <div class="col-sm-1">
+                    <img src="imgs/heart-full.png" alt="heart" class="img-responsive heart"/>
+                </div>
+                <div class="col-sm-11">
+                    <input type="text" class="no-border" placeholder="Adicione um comentário...">
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <article class="post col-md-7 col-md-offset-2 ">
+        <header class="post-header row">
+            <div class="col-sm-11 ">
+                <img src="imgs/profile1.jpg" class="img-responsive img-circle profile-thumb" alt="profile picture"/>
+                <strong>lucassandes</strong>
+                <br/> Highlands, Scotland
+            </div>
+            <div class="col-sm-1 text-right text-grey row">
+                2h
+            </div>
+        </header>
+
+        <div class="row">
+            <img src="imgs/pic3.jpg" class="img-responsive" alt="picuture"/>
+        </div>
+        <div class="col-sm-12">
+            <section>
+                <a href="#" title="lucassandes">lucassandes</a>,
+                <a href="#" title="giullyleao">giullyleao</a>,
+                <a href="#" title="camilapaier">camilapaier</a> e
+                <a href="#" title="nicolecaverzan">nicolecaverzan</a> curtiram isso
+            </section>
+
+            <section>
+                <ul>
+                    <li>
+                        <a href="#">lucassandes</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        felis erat.
+                    </li>
+
+                    <li>
+                        <a href="#">giullyleao</a> <span class="hashtag">@lucassandes</span> great!
+                    </li>
+
+                    <li>
+                        <a href="#">camilapaier</a> Praesent dictum sed quam nec vestibulum.
+                    </li>
+                </ul>
+            </section>
+            <hr/>
+            <section>
+                <div class="col-sm-1">
+                    <img src="imgs/heart-full.png" alt="heart" class="img-responsive heart"/>
+                </div>
+                <div class="col-sm-11">
+                    <input type="text" class="no-border" placeholder="Adicione um comentário...">
+                </div>
+            </section>
+        </div>
+    </article>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Upload picture</h4>
+            </div>
+            <div class="modal-body">
+
+                <form action="upload.php" class="dropzone" id="my-dropzone">
+                    <div class="dz-message needsclick">
+                        Drop files here or click to upload.
+
+                    </div>
+
+                    <div class="dz-filename">
+                        <span data-dz-name></span>
+                    </div>
+
+                    <div class="fallback">
+
+                    </div>
+                </form>
+
+                <div id="apply-filters">
+                    <img id="uploaded-image" src="" alt="image uploaded by user" class="img-responsive "/>
+
+                    <div class="filters row">
+                        <div class="col-sm-3">
+                            <a href="#"><img id="filter-1" src="" alt="image uploaded by user"
+                                 class="uploaded-image-thumb img-responsive"/></a>
+                            <div class="filter-labe">Normal</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#"><img id="filter-2" src="" alt="image uploaded by user"
+                                 class="uploaded-image-thumb img-responsive brannan"/></a>
+                            <div class="filter-labe">Brannan</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#"><img id="filter-3" src="" alt="image uploaded by user"
+                                 class="uploaded-image-thumb img-responsive inkwell"/></a>
+                            <div class="filter-labe">Inkwell</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#"><img id="filter-4" src="" alt="image uploaded by user"
+                                 class="uploaded-image-thumb img-responsive _1977"/></a>
+                            <div class="filter-labe">1977</div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <a href="#"><img id="filter-5" src="" alt="image uploaded by user"
+                                 class="uploaded-image-thumb img-responsive aden"/></a>
+                            <div class="filter-labe">Aden</div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <a href="#"><img id="filter-6" src="" alt="image uploaded by user"
+                                 class="uploaded-image-thumb img-responsive brooklyn"/></a>
+                            <div class="filter-labe">Brooklin</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary pull-right" data-toggle="tooltip" data-placement="top"
+                        title="Upload an image first" id="next-button">Next &raquo;</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- dropzone -->
+<script src="js/dropzone.js"></script>
+<script>
+    //starting bootstrap tooltip
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    //disable button until user uploads img
+    $(document).ready(function () {
+        $('#next-button').addClass("disabled");
+
+    })
+
+    //uploader class
+    var uploader = new Dropzone('#my-dropzone');
+
+
+    uploader.on('success', function (file, resp) {
+        $("#next-button").removeClass("disabled").attr('title', 'Next to chose filters').attr('data-original-title', 'Next to chose filters');
+        console.log('beleza');
+        console.log(file.name);
+
+
+        $("#next-button").click(function () {
+            $("#uploaded-image").attr('src', 'uploads/' + file.name);
+            $(".uploaded-image-thumb").attr('src', 'uploads/' + file.name);
+
+            //apply filters
+
+            //no-filter
+            $("#filter-1").click(function () {
+                $("#uploaded-image").removeClass().addClass('img-responsive');
+
+            });
+
+            //Brannan
+            $("#filter-2").click(function () {
+                $("#uploaded-image").removeClass().addClass('img-responsive brannan');
+            });
+
+            //inkwell
+            $("#filter-3").click(function () {
+                $("#uploaded-image").removeClass().addClass('img-responsive inkwell');
+            });
+
+            //_1977
+            $("#filter-4").click(function () {
+                $("#uploaded-image").removeClass().addClass('img-responsive _1977');
+            });
+
+            //brooklyn
+            $("#filter-5").click(function () {
+                $("#uploaded-image").removeClass().addClass('img-responsive brooklyn');
+            });
+
+            //clarendon
+            $("#filter-2").click(function () {
+                $("#uploaded-image").removeClass().addClass('img-responsive clarendon');
+            });
+
+        });
+
+
+    });
+
+
+</script>
+
 </body>
 
 </html>

@@ -6759,6 +6759,20 @@ body {
   color: white;
   text-shadow: -1px 0 #919191, 0 1px #919191, 1px 0 #919191, 0 -1px #919191;
 }
+.background-black {
+  background: black;
+}
+#my-dropzone {
+  border: 2px dashed #dddddd;
+  color: #c4c4c4;
+  font-size: 16px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 2px;
+}
+#my-dropzone:hover {
+  border-color: #c4c4c4;
+}
 .post {
   border: 1px solid #dddddd;
   background: white;
