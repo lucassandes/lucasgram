@@ -225,6 +225,7 @@
                         aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Upload picture</h4>
             </div>
+
             <div class="modal-body">
                 <div id="upload-area">
                     <form action="upload.php" class="dropzone" id="my-dropzone">
@@ -244,41 +245,51 @@
                                              class="uploaded-image-thumb img-responsive"/></a>
                             <div class="filter-labe">Normal</div>
                         </div>
+
                         <div class="col-sm-3">
                             <a href="#"><img id="filter-2" src="" alt="image uploaded by user"
                                              class="uploaded-image-thumb img-responsive brannan"/></a>
                             <div class="filter-labe">Brannan</div>
                         </div>
+
                         <div class="col-sm-3">
                             <a href="#"><img id="filter-3" src="" alt="image uploaded by user"
                                              class="uploaded-image-thumb img-responsive inkwell"/></a>
                             <div class="filter-labe">Inkwell</div>
                         </div>
+
                         <div class="col-sm-3">
                             <a href="#"><img id="filter-4" src="" alt="image uploaded by user"
                                              class="uploaded-image-thumb img-responsive _1977"/></a>
                             <div class="filter-labe">1977</div>
                         </div>
 
-                        <!--
-                        <div class="col-sm-3">
-                            <a href="#"><img id="filter-5" src="" alt="image uploaded by user"
-                                             class="uploaded-image-thumb img-responsive aden"/></a>
-                            <div class="filter-labe">Aden</div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <a href="#"><img id="filter-6" src="" alt="image uploaded by user"
-                                             class="uploaded-image-thumb img-responsive brooklyn"/></a>
-                            <div class="filter-labe">Brooklin</div>
-                        </div> -->
                     </div>
 
                 </div>
 
+                <div id="share-to">
+                    <div class="col-sm-2">
+                        <img id="picture-to-share" src="" alt="image uploaded by user"
+                             class="img-responsive "/>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" class="no-border picture-caption" placeholder="Write a caption...">
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr/>
+
+                    <div class="col-sm-1">
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="col-sm-11">
+                        <input type="text" class="no-border" placeholder="Add Location">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
             </div>
-
-
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-primary pull-right" data-toggle="tooltip" data-placement="top"
@@ -305,6 +316,7 @@
     $(document).ready(function () {
         $('#next-button').addClass("disabled");
         $("#apply-filters").hide();
+        $("#share-to").hide();
     });
 
     //uploader class
@@ -326,31 +338,36 @@
             $("#myModalLabel").html('Chose the filter');
 
             //apply filters
-
+            var appliedFilter;
             //no-filter
             $("#filter-1").click(function () {
                 $("#uploaded-image").removeClass().addClass('img-responsive');
+                appliedFilter = null;
 
             });
 
             //Brannan
             $("#filter-2").click(function () {
                 $("#uploaded-image").removeClass().addClass('img-responsive brannan');
+                appliedFilter = 'brannan';
             });
 
             //inkwell
             $("#filter-3").click(function () {
                 $("#uploaded-image").removeClass().addClass('img-responsive inkwell');
+                appliedFilter = 'inkwell';
             });
 
             //_1977
             $("#filter-4").click(function () {
                 $("#uploaded-image").removeClass().addClass('img-responsive _1977');
+                appliedFilter = '_1977';
             });
 
             //aden
             $("#filter-5").click(function () {
                 $("#uploaded-image").removeClass().addClass('img-responsive aden');
+                appliedFilter = 'aden';
             });
 
             //brooklyn
@@ -360,7 +377,18 @@
 
 
             $("#next-button").click(function () {
-                
+                //share-to
+
+                $("#myModalLabel").html('Share');
+
+
+                $("#picture-to-share").attr('src', 'uploads/' + file.name).addClass(appliedFilter);
+                $("#apply-filters").hide();
+                $("#share-to").show();
+
+                $("#next-button").html('Share');
+
+
             });
         });
 

@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d7c6d51e-ff01-494a-a516-a64bd5648309" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/bootstrap.css" afterPath="$PROJECT_DIR$/less/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/custom.less" afterPath="$PROJECT_DIR$/less/custom.less" />
     </list>
     <ignored path="lucasgram.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,21 +30,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="362" column="16" selection-start-line="362" selection-start-column="16" selection-end-line="362" selection-end-column="16" />
+            <state relative-caret-position="339">
+              <caret line="386" column="32" selection-start-line="386" selection-start-column="32" selection-end-line="386" selection-end-column="32" />
               <folding>
-                <marker date="1477004110000" expanded="false" signature="11588:11595" ph="»" />
+                <marker date="1477007780000" expanded="false" signature="11780:11787" ph="»" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -75,7 +68,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="714" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -221,15 +214,15 @@
       <workItem from="1476992818313" duration="7000" />
       <workItem from="1476992843420" duration="2317000" />
       <workItem from="1476996594092" duration="329000" />
-      <workItem from="1476996976459" duration="5484000" />
+      <workItem from="1476996976459" duration="8225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15618000" />
+    <option name="totallyTimeSpent" value="18359000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="714" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -284,7 +277,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477004110000" expanded="false" signature="11588:11595" ph="»" />
+            <marker date="1477007780000" expanded="false" signature="11780:11787" ph="»" />
           </folding>
         </state>
       </provider>
@@ -304,7 +297,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477004110000" expanded="false" signature="11588:11595" ph="»" />
+            <marker date="1477007780000" expanded="false" signature="11780:11787" ph="»" />
           </folding>
         </state>
       </provider>
@@ -334,7 +327,7 @@
         <state relative-caret-position="3435">
           <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
           <folding>
-            <marker date="1477004110000" expanded="false" signature="11588:11595" ph="»" />
+            <marker date="1477007780000" expanded="false" signature="11780:11787" ph="»" />
           </folding>
         </state>
       </provider>
@@ -354,7 +347,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477004110000" expanded="false" signature="11588:11595" ph="»" />
+            <marker date="1477007780000" expanded="false" signature="11780:11787" ph="»" />
           </folding>
         </state>
       </provider>
@@ -377,7 +370,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477004110000" expanded="false" signature="11588:11595" ph="»" />
+            <marker date="1477007780000" expanded="false" signature="11780:11787" ph="»" />
           </folding>
         </state>
       </provider>
@@ -447,14 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/dropzone.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-25573">
@@ -463,12 +448,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="362" column="16" selection-start-line="362" selection-start-column="16" selection-end-line="362" selection-end-column="16" />
+        <state relative-caret-position="339">
+          <caret line="386" column="32" selection-start-line="386" selection-start-column="32" selection-end-line="386" selection-end-column="32" />
           <folding>
-            <marker date="1477004110000" expanded="false" signature="11588:11595" ph="»" />
+            <marker date="1477007780000" expanded="false" signature="11780:11787" ph="»" />
           </folding>
         </state>
       </provider>

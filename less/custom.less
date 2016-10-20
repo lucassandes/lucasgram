@@ -1,7 +1,6 @@
 // main: bootstrap.less
 body {
     background: lighten(@gray-light, 50%);
-   
 }
 
 .header {
@@ -10,20 +9,18 @@ body {
     padding: 30px 0px 10px 0px;
     margin-bottom: 60px;
     @icon-color: lighten(@gray-light, 10%);
-        
     .logo {
         img {
             padding-top: 5px;
             width: 110px;
         }
     }
-    .search {  
+    .search {
         float: none;
         margin: 0 auto;
         .glyphicon {
             color: lighten(@gray-light, 20%);
         }
-  
     }
     .menu {
         ul {
@@ -49,19 +46,19 @@ body {
 .background-black {
     background: black;
 }
+
 #my-dropzone {
-    border: 2px dashed  lighten(@gray-light, 40%);
-    color: lighten(@gray-light, 30%); 
-    
+    border: 2px dashed lighten(@gray-light, 40%);
+    color: lighten(@gray-light, 30%);
     font-size: 16px;
     text-align: center;
     padding: 40px;
-    border-radius: 2px; 
+    border-radius: 2px;
     &:hover {
         border-color: lighten(@gray-light, 30%);
     }
-    
 }
+
 .post {
     border: 1px solid lighten(@gray-light, 40%);
     background: white;
@@ -103,31 +100,47 @@ body {
     .heart {
         padding-top: 8px;
     }
-    .no-border {
-        display: block;
-        width: 100%;
-        height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-        padding: @padding-base-vertical @padding-base-horizontal;
-        font-size: @font-size-base;
-        line-height: @line-height-base;
-        color: @input-color;
-        background-color: @input-bg;
-        background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-        border: none;
-        border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
-        border: none;
-        // border: 1px solid black;
-        *:focus {
-            outline: none;
-        }
-        textarea:focus,
-        input:focus {
-            outline: none;
-        }
-    }
     section {
         margin: 15px 0;
     }
+}
+
+.no-border {
+    display: block;
+    width: 100%;
+    height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+    padding: @padding-base-vertical @padding-base-horizontal;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    color: @input-color;
+    background-color: @input-bg;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: none;
+    border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+    border: none;
+    // border: 1px solid black;
+    *:focus {
+        outline: none;
+    }
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+}
+
+.modal {
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+    .picture-caption {
+        padding-top:15px;
+    }
+    .glyphicon {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+   
 }
 
 article {
