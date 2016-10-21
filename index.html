@@ -28,7 +28,7 @@
 <header class="header">
     <div class="container">
         <div class="col-md-2 logo">
-            <img src="imgs/lucasgram.png" class="img-responsive" alt="lucasgram"/>
+            <img src="imgs/lucasgram.png" class="img-responsive center-block" alt="lucasgram"/>
         </div>
 
         <div class="col-md-7 ">
@@ -61,6 +61,46 @@
 </header>
 
 <div class="container">
+
+    <article class="post col-md-7 col-md-offset-2 " id="upload-article">
+        <header class="post-header row">
+            <div class="col-sm-11 ">
+                <img src="imgs/profile1.jpg" class="img-responsive img-circle profile-thumb" alt="profile picture"/>
+                <strong>lucassandes</strong>
+                <br/> <span id="upload-location"></span>
+            </div>
+            <div class="col-sm-1 text-right text-grey row">
+                Now
+            </div>
+        </header>
+
+        <div class="row">
+            <img src="" id="upload-image" class="img-responsive" alt="picuture"/>
+        </div>
+        <div class="col-sm-12">
+
+
+            <section>
+                <ul>
+                    <li>
+                        <a href="#">lucassandes</a> <span id="upload-caption">Caption</span>
+                    </li>
+
+                </ul>
+            </section>
+            <hr/>
+            <section>
+                <div class="col-sm-1">
+                    <img src="imgs/heart-full.png" alt="heart" class="img-responsive heart"/>
+                </div>
+                <div class="col-sm-11">
+                    <input type="text" class="no-border" placeholder="Adicione um comentário...">
+                </div>
+            </section>
+        </div>
+    </article>
+
+
     <article class="post col-md-7 col-md-offset-2 ">
         <header class="post-header row">
             <div class="col-sm-11 ">
@@ -221,7 +261,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-modal"><span
                         aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Upload picture</h4>
             </div>
@@ -274,7 +314,8 @@
                              class="img-responsive "/>
                     </div>
                     <div class="col-sm-10">
-                        <input type="text" class="no-border picture-caption" placeholder="Write a caption...">
+                        <input type="text" id="input-caption" class="no-border picture-caption"
+                               placeholder="Write a caption...">
                     </div>
                     <div class="clearfix"></div>
                     <hr/>
@@ -284,7 +325,7 @@
                     </div>
 
                     <div class="col-sm-11">
-                        <input type="text" class="no-border" placeholder="Add Location">
+                        <input type="text" class="no-border" id="input-location" placeholder="Add Location">
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -312,16 +353,28 @@
         $('[data-toggle="tooltip"]').tooltip()
     })
 
-    //disable button until user uploads img
-    $(document).ready(function () {
-        $('#next-button').addClass("disabled");
+    function startModal() {
+        $('#my-dropzone').show();
         $("#apply-filters").hide();
         $("#share-to").hide();
+        $("#upload-article").hide();
+    }
+    ;
+    //disable button until user uploads img
+    $(document).ready(function () {
+        startModal();
+        $('#next-button').addClass("disabled");
+
     });
+
+
+    $("#close-modal").click(function () {
+
+    });
+
 
     //uploader class
     var uploader = new Dropzone('#my-dropzone');
-
 
     uploader.on('success', function (file, resp) {
         $("#next-button").removeClass("disabled").attr('title', 'Next to chose filters').attr('data-original-title', 'Next to chose filters');
@@ -386,8 +439,21 @@
                 $("#apply-filters").hide();
                 $("#share-to").show();
 
-                $("#next-button").html('Share');
 
+                $("#next-button").click(function () {
+                    $("#next-button").html('Share').attr('data-dismiss', 'modal');
+                    var location = $("#input-location").val();
+                    var caption = $("#input-caption").val();
+
+                    $("#upload-location").html(location);
+                    $("#upload-caption").html(caption);
+                    $("#upload-image").attr('src', 'uploads/' + file.name).addClass(appliedFilter);
+
+                    $("#upload-article").fadeIn("slow", function () {
+                        // Animation complete
+                    });
+
+                });
 
             });
         });
