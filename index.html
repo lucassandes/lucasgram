@@ -66,10 +66,12 @@
 <div class="container">
     <article class="post col-md-7 col-md-offset-2">
         <div id="create-filter">
-            <img id="uploaded-image" src="imgs/pic1.jpg" alt="image uploaded by user" class="img-responsive "/>
+            <img id="create-filter-img" src="imgs/pic1.jpg" alt="image uploaded by user" class="img-responsive" />
 
-            Brightness <input id="brightness" data-slider-id='brightness-slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
-            Contrast
+            Brightness <input id="brightness" data-slider-id='brightness-slider' type="text" data-slider-min="-99" data-slider-max="99" data-slider-step="1" data-slider-value="10"/>
+
+            Current Slider Value: <span id="ex6SliderVal">3</span></span>
+            <!--Contrast
             Drop-shadow
             Grayscale
             hue-rotate
@@ -78,7 +80,7 @@
             saturation
             sepia
             Blur<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
-
+-->
         </div>
     </article>
     <!-- uploaded image -->
@@ -335,21 +337,7 @@
                 </div>
 
 
-                <div id="create-filter">
-                    <img id="uploaded-image" src="" alt="image uploaded by user" class="img-responsive "/>
 
-                    Brightness<input id="brightness" data-slider-id='brightness-slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
-                    Contrast
-                    Drop-shadow
-                    Grayscale
-                    hue-rotate
-                    invert
-                    opacity
-                    saturation
-                    sepia
-                    Blur<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
-
-                </div>
 
                 <div id="share-to">
                     <div class="col-sm-2">
@@ -395,7 +383,7 @@
 <script src="js/bootstrap-slider.min.js"></script>
 
 <!-- lucasgram -->
-<script scr="js/lucasgram.js"></script>
+<script src="js/lucasgram.js"></script>
 
 </body>
 

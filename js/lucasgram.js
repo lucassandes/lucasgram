@@ -118,15 +118,39 @@ uploader.on('success', function (file, resp) {
 //Range sliders
 
 // With JQuery
-$('#ex1').slider({
+$('#brightness').slider({
     formatter: function(value) {
-        return 'Current value: ' + value;
+        return value;
     }
 });
 
-// Without JQuery
-var slider = new Slider('#ex1', {
-    formatter: function(value) {
-        return 'Current value: ' + value;
-    }
+
+function minTwoDigits(n) {
+    return (n < 10 ? '0' : '') + n;
+}
+
+function rewriteMinusNumbers(n) {
+    return (n < 0 ? '0' : '1');
+}
+
+function rewriteSliderValue(n) {
+    return rewriteMinusNumbers(n)+'.'+minTwoDigits(Math.abs(n));
+}
+$("#brightness").on("slide", function(slideEvt) {
+    $("#create-filter-img").css({
+
+        'filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')',
+        '-webkit-filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')',
+        '-moz-filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')',
+        '-o-filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')',
+        '-ms-filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')'
+    });
+    //$("#ex6SliderVal").text(minTwoDigits(Math.abs(slideEvt.value)));
+    $("#ex6SliderVal").text(rewriteSliderValue(slideEvt.value));
 });
+
+/*
+.ig-willow {
+    -webkit-filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02);
+    filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02);
+}*/
