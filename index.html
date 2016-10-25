@@ -11,10 +11,14 @@
     <!-- Bootstrap -->
     <link href="css/custom.css" rel="stylesheet">
 
+    <!-- Dropzone -->
     <link href="css/dropzone.css" rel="stylesheet">
 
-    <!-- Filters  https://github.com/una/CSSgram -->
+    <!-- CSSGram -->
     <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
+
+    <!-- Bootstrap Slider -->
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,6 +30,7 @@
 
 <body>
 <header class="header">
+
     <div class="container">
         <div class="col-md-2 col-sm-4 col-xs-4 logo">
             <img src="imgs/lucasgram.png" class="img-responsive" alt="lucasgram"/>
@@ -42,12 +47,15 @@
             </div>
         </div>
 
-    
+
         <div class="col-md-3  col-sm-4 menu col-xs-8 ">
             <ul>
-                <li><a href="#" data-toggle="modal tooltip" data-target="#uploadModal"><span
-                        class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Upload an image first"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> </a></li>
+                <li>
+                    <a href="#uploadModal" data-toggle="modal" data-target="#uploadModal">
+                        <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></a>
+                </li>
+                <li><a href="#" ><span
+                        class="glyphicon glyphicon-heart" aria-hidden="true"></span> </a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> </a></li>
             </ul>
         </div>
@@ -56,6 +64,23 @@
 </header>
 
 <div class="container">
+    <article class="post col-md-7 col-md-offset-2">
+        <div id="create-filter">
+            <img id="uploaded-image" src="imgs/pic1.jpg" alt="image uploaded by user" class="img-responsive "/>
+
+            Brightness <input id="brightness" data-slider-id='brightness-slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+            Contrast
+            Drop-shadow
+            Grayscale
+            hue-rotate
+            invert
+            opacity
+            saturation
+            sepia
+            Blur<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+
+        </div>
+    </article>
     <!-- uploaded image -->
     <article class="post col-md-7 col-md-offset-2" id="upload-article">
         <header class="post-header row">
@@ -70,7 +95,7 @@
         </header>
 
         <div class="row">
-            <img src=""  id="upload-image" class="img-responsive" alt="picuture"/>
+            <img src="" id="upload-image" class="img-responsive" alt="picuture"/>
         </div>
         <div class="col-sm-12">
 
@@ -85,7 +110,7 @@
             <hr/>
             <section>
                 <div class="col-sm-1 col-xs-2 heart-icon">
-                    <span class="glyphicon glyphicon-heart heart-full" aria-hidden="true"></span>  
+                    <span class="glyphicon glyphicon-heart heart-full" aria-hidden="true"></span>
                 </div>
                 <div class="col-sm-11 col-xs-10">
                     <input type="text" class="no-border" placeholder="Adicione um comentário...">
@@ -138,7 +163,7 @@
             <hr/>
             <section>
                 <div class="col-sm-1 col-xs-2 heart-icon">
-                    <span class="glyphicon glyphicon-heart heart-full" aria-hidden="true"></span>  
+                    <span class="glyphicon glyphicon-heart heart-full" aria-hidden="true"></span>
                 </div>
                 <div class="col-sm-11 col-xs-10">
                     <input type="text" class="no-border" placeholder="Adicione um comentário...">
@@ -147,9 +172,8 @@
         </div>
         <div class="clearfix"></div>
     </article>
-    
-    
-    
+
+
     <article class="post col-md-7 col-md-offset-2 ">
         <header class="post-header row">
             <div class="col-xs-11 ">
@@ -192,7 +216,7 @@
             <hr/>
             <section>
                 <div class="col-sm-1 col-xs-2 heart-icon">
-                    <span class="glyphicon glyphicon-heart heart-full" aria-hidden="true"></span>  
+                    <span class="glyphicon glyphicon-heart heart-full" aria-hidden="true"></span>
                 </div>
                 <div class="col-sm-11 col-xs-10">
                     <input type="text" class="no-border" placeholder="Adicione um comentário...">
@@ -201,8 +225,8 @@
         </div>
         <div class="clearfix"></div>
     </article>
-    
-    
+
+
     <article class="post col-md-7 col-md-offset-2 ">
         <header class="post-header row">
             <div class="col-xs-11 ">
@@ -245,7 +269,7 @@
             <hr/>
             <section>
                 <div class="col-sm-1 col-xs-2 heart-icon">
-                    <span class="glyphicon glyphicon-heart heart-full" aria-hidden="true"></span>  
+                    <span class="glyphicon glyphicon-heart heart-full" aria-hidden="true"></span>
                 </div>
                 <div class="col-sm-11 col-xs-10">
                     <input type="text" class="no-border" placeholder="Adicione um comentário...">
@@ -254,7 +278,7 @@
         </div>
         <div class="clearfix"></div>
     </article>
-    
+
 </div>
 
 
@@ -310,6 +334,23 @@
 
                 </div>
 
+
+                <div id="create-filter">
+                    <img id="uploaded-image" src="" alt="image uploaded by user" class="img-responsive "/>
+
+                    Brightness<input id="brightness" data-slider-id='brightness-slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+                    Contrast
+                    Drop-shadow
+                    Grayscale
+                    hue-rotate
+                    invert
+                    opacity
+                    saturation
+                    sepia
+                    Blur<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+
+                </div>
+
                 <div id="share-to">
                     <div class="col-sm-2">
                         <img id="picture-to-share" src="" alt="image uploaded by user"
@@ -349,122 +390,12 @@
 
 <!-- dropzone -->
 <script src="js/dropzone.js"></script>
-<script>
-    //starting bootstrap tooltip
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
 
-    function startModal() {
-        $('#my-dropzone').show();
-        $("#apply-filters").hide();
-        $("#share-to").hide();
-        $("#upload-article").hide();
-    }
-    ;
-    //disable button until user uploads img
-    $(document).ready(function () {
-        startModal();
-        $('#next-button').addClass("disabled");
+<!-- Slider for Bootstrap -->
+<script src="js/bootstrap-slider.min.js"></script>
 
-    });
-
-
-    $("#close-modal").click(function () {
-
-    });
-
-
-    //uploader class
-    var uploader = new Dropzone('#my-dropzone');
-
-    uploader.on('success', function (file, resp) {
-        $("#next-button").removeClass("disabled").attr('title', 'Next to chose filters').attr('data-original-title', 'Next to chose filters');
-        console.log('beleza');
-        console.log(file.name);
-
-
-        $("#next-button").click(function () {
-            $("#uploaded-image").attr('src', 'uploads/' + file.name);
-            $(".uploaded-image-thumb").attr('src', 'uploads/' + file.name);
-
-            $("#my-dropzone").hide();
-            $("#apply-filters").show();
-            $("#myModalLabel").html('Chose the filter');
-
-            //apply filters
-            var appliedFilter;
-            //no-filter
-            $("#filter-1").click(function () {
-                $("#uploaded-image").removeClass().addClass('img-responsive');
-                appliedFilter = null;
-
-            });
-
-            //Brannan
-            $("#filter-2").click(function () {
-                $("#uploaded-image").removeClass().addClass('img-responsive brannan');
-                appliedFilter = 'brannan';
-            });
-
-            //inkwell
-            $("#filter-3").click(function () {
-                $("#uploaded-image").removeClass().addClass('img-responsive inkwell');
-                appliedFilter = 'inkwell';
-            });
-
-            //_1977
-            $("#filter-4").click(function () {
-                $("#uploaded-image").removeClass().addClass('img-responsive _1977');
-                appliedFilter = '_1977';
-            });
-
-            //aden
-            $("#filter-5").click(function () {
-                $("#uploaded-image").removeClass().addClass('img-responsive aden');
-                appliedFilter = 'aden';
-            });
-
-            //brooklyn
-            $("#filter-6").click(function () {
-                $("#uploaded-image").removeClass().addClass('img-responsive brooklyn');
-            });
-
-
-            $("#next-button").click(function () {
-                //share-to
-
-                $("#myModalLabel").html('Share');
-
-
-                $("#picture-to-share").attr('src', 'uploads/' + file.name).addClass(appliedFilter);
-                $("#apply-filters").hide();
-                $("#share-to").show();
-
-
-                $("#next-button").click(function () {
-                    $("#next-button").html('Share').attr('data-dismiss', 'modal');
-                    var location = $("#input-location").val();
-                    var caption = $("#input-caption").val();
-
-                    $("#upload-location").html(location);
-                    $("#upload-caption").html(caption);
-                    $("#upload-image").attr('src', 'uploads/' + file.name).addClass(appliedFilter);
-
-                    $("#upload-article").fadeIn("slow", function () {
-                        // Animation complete
-                    });
-
-                });
-
-            });
-        });
-
-
-    });
-
-
-</script>
+<!-- lucasgram -->
+<script scr="js/lucasgram.js"></script>
 
 </body>
 

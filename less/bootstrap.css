@@ -6756,6 +6756,7 @@ body {
 }
 .header .menu ul li:last-child {
   padding-right: 0;
+  margin-right: -15px;
 }
 .header .menu .glyphicon {
   font-size: 20px;
@@ -6786,6 +6787,14 @@ body {
 .post img.profile-thumb {
   height: 40px;
   margin-right: 15px;
+}
+.post .heart-icon .glyphicon {
+  font-size: 25px;
+  color: white;
+  text-shadow: -1px 0 #919191, 0 1px #919191, 1px 0 #919191, 0 -1px #919191;
+}
+.post .heart-icon .glyphicon.heart-full {
+  color: #ed4956;
 }
 .post .text-grey {
   color: #919191;
@@ -6854,4 +6863,7 @@ body {
 }
 article {
   margin-bottom: 60px;
+}
+#ex1Slider .slider-selection {
+  background: #BABABA;
 }
