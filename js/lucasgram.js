@@ -120,7 +120,13 @@ uploader.on('success', function (file, resp) {
 // With JQuery
 $('#brightness').slider({
     formatter: function(value) {
-        return value;
+        return value*2;
+    }
+});
+
+$('#contrast').slider({
+    formatter: function(value) {
+        return value*2;
     }
 });
 
@@ -134,7 +140,8 @@ function rewriteMinusNumbers(n) {
 }
 
 function rewriteSliderValue(n) {
-    return rewriteMinusNumbers(n)+'.'+minTwoDigits(Math.abs(n));
+    return 1 + (n/100)
+
 }
 $("#brightness").on("slide", function(slideEvt) {
     $("#create-filter-img").css({

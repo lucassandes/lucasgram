@@ -7,6 +7,9 @@
           <mappings>
             <mapping deploy="/lucasgram" local="$PROJECT_DIR$" web="/lucasgram" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/less" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
