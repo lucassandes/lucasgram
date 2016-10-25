@@ -6791,8 +6791,11 @@ body {
 }
 .post .heart-icon .glyphicon {
   font-size: 25px;
+  color: white;
+  text-shadow: -1px 0 #919191, 0 1px #919191, 1px 0 #919191, 0 -1px #919191;
+}
+.post .heart-icon .glyphicon.heart-full {
   color: #ed4956;
-  /*text-shadow: -1px 0 @icon-color, 0 1px @icon-color, 1px 0 @icon-color, 0 -1px @icon-color;*/
 }
 .post .text-grey {
   color: #919191;
