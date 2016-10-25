@@ -2,13 +2,13 @@
 body {
     background: lighten(@gray-light, 50%);
 }
-
+@icon-color: lighten(@gray-light, 10%);
+@red: #ed4956; 
 .header {
     border-bottom: 1px solid lighten(@gray-light, 40%);
     background: white;
     padding: 30px 0px 10px 0px;
     margin-bottom: 60px;
-    @icon-color: lighten(@gray-light, 10%);
     .logo {
         img {
             padding-top: 5px;
@@ -37,6 +37,7 @@ body {
             }
             li:last-child {
                 padding-right: 0;
+                margin-right: -15px;
             }
         }
         .glyphicon {
@@ -72,6 +73,14 @@ body {
     img.profile-thumb {
         height: 40px;
         margin-right: 15px;
+    }
+    
+    .heart-icon {
+         .glyphicon {
+            font-size: 25px;
+            color: @red;
+            /*text-shadow: -1px 0 @icon-color, 0 1px @icon-color, 1px 0 @icon-color, 0 -1px @icon-color;*/
+        }
     }
     .text-grey {
         color: lighten(@gray-light, 10%);

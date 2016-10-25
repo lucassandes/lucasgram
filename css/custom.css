@@ -6757,6 +6757,7 @@ body {
 }
 .header .menu ul li:last-child {
   padding-right: 0;
+  margin-right: -15px;
 }
 .header .menu .glyphicon {
   font-size: 20px;
@@ -6787,6 +6788,11 @@ body {
 .post img.profile-thumb {
   height: 40px;
   margin-right: 15px;
+}
+.post .heart-icon .glyphicon {
+  font-size: 25px;
+  color: #ed4956;
+  /*text-shadow: -1px 0 @icon-color, 0 1px @icon-color, 1px 0 @icon-color, 0 -1px @icon-color;*/
 }
 .post .text-grey {
   color: #919191;
