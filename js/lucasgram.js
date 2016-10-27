@@ -11,6 +11,7 @@ function startModal() {
     $("#apply-filters").hide();
     $("#share-to").hide();
     $("#upload-article").hide();
+    $("#create-filter").hide();
 }
 ;
 //disable button until user uploads img
@@ -83,7 +84,11 @@ uploader.on('success', function (file, resp) {
 
 
         // create filters
-        $("#next-button").click(function () {
+        $("#create-filter-btn").click(function () {
+            $("#create-filter").show();
+            $("#apply-filters").hide();
+            $("#create-filter-img").attr('src', 'uploads/' + file.name);
+
 
         });
 
@@ -125,6 +130,7 @@ function rewriteSliderValue(n) {
     return 1 + (n/100)
 
 }
+
 
 $(document).ready(function() {
     //thanks http://css3.bradshawenterprises.com/filters/
