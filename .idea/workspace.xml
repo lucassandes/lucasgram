@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d7c6d51e-ff01-494a-a516-a64bd5648309" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lucasgram.js" afterPath="$PROJECT_DIR$/js/lucasgram.js" />
     </list>
     <ignored path="lucasgram.iws" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="lucasgram.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/lucasgram.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+            <state relative-caret-position="135">
+              <caret line="133" column="59" selection-start-line="133" selection-start-column="59" selection-end-line="133" selection-end-column="59" />
               <folding>
                 <element signature="e#0#46#0" expanded="false" />
               </folding>
@@ -268,12 +267,12 @@
       <workItem from="1476996594092" duration="329000" />
       <workItem from="1476996976459" duration="8251000" />
       <workItem from="1477076538604" duration="4236000" />
-      <workItem from="1477329768685" duration="14393000" />
+      <workItem from="1477329768685" duration="16408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37014000" />
+    <option name="totallyTimeSpent" value="39029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -522,8 +521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lucasgram.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+        <state relative-caret-position="135">
+          <caret line="133" column="59" selection-start-line="133" selection-start-column="59" selection-end-line="133" selection-end-column="59" />
           <folding>
             <element signature="e#0#46#0" expanded="false" />
           </folding>
