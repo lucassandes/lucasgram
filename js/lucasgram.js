@@ -82,6 +82,11 @@ uploader.on('success', function (file, resp) {
         });
 
 
+        // create filters
+        $("#next-button").click(function () {
+
+        });
+
         $("#next-button").click(function () {
             //share-to
 
@@ -115,49 +120,53 @@ uploader.on('success', function (file, resp) {
 });
 
 
-//Range sliders
-
-// With JQuery
-$('#brightness').slider({
-    formatter: function(value) {
-        return value*2;
-    }
-});
-
-$('#contrast').slider({
-    formatter: function(value) {
-        return value*2;
-    }
-});
-
-
-function minTwoDigits(n) {
-    return (n < 10 ? '0' : '') + n;
-}
-
-function rewriteMinusNumbers(n) {
-    return (n < 0 ? '0' : '1');
-}
 
 function rewriteSliderValue(n) {
     return 1 + (n/100)
 
 }
-$("#brightness").on("slide", function(slideEvt) {
-    $("#create-filter-img").css({
 
-        'filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')',
-        '-webkit-filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')',
-        '-moz-filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')',
-        '-o-filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')',
-        '-ms-filter': 'brightness('+rewriteSliderValue(slideEvt.value)+')'
+$(document).ready(function() {
+    //thanks http://css3.bradshawenterprises.com/filters/
+    var controls_input = $("#controls input"),
+        image = $("#create-filter-img");
+
+    function updateDisplay() {
+        var newCSS = '';
+        var value;
+        controls_input.each(function(){
+            var units = '';
+            value = rewriteSliderValue($(this).val());
+            if ($(this).attr('id') == 'blur') {
+                units = 'px';
+                value = $(this).val();
+            } else if ($(this).attr('id') == 'hue-rotate') {
+                units = 'deg';
+                value = $(this).val();
+            } else if ($(this).attr('id') == 'sepia' ) {
+                value = $(this).val();
+            }
+
+
+            newCSS += $(this).attr('id')+"("+value+units+") ";
+
+            $("#"+$(this).attr('id')+"_output").text($(this).attr('id')+"("+value+units+")");
+        })
+        image.css("-webkit-filter", newCSS);
+        image.css("-moz-filter", newCSS);
+        image.css("-ms-filter", newCSS);
+        image.css("-o-filter", newCSS);
+        image.css("filter", newCSS);
+    }
+    updateDisplay();
+
+    controls_input.change(updateDisplay);
+
+    $("#reset").click(function(){
+        controls_input.each(function(){
+            $(this).val($(this).attr('data-default'));
+        });
+        updateDisplay();
+        return false;
     });
-    //$("#ex6SliderVal").text(minTwoDigits(Math.abs(slideEvt.value)));
-    $("#ex6SliderVal").text(rewriteSliderValue(slideEvt.value));
 });
-
-/*
-.ig-willow {
-    -webkit-filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02);
-    filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02);
-}*/

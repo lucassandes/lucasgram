@@ -54,7 +54,7 @@
                     <a href="#uploadModal" data-toggle="modal" data-target="#uploadModal">
                         <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></a>
                 </li>
-                <li><a href="#" ><span
+                <li><a href="#"><span
                         class="glyphicon glyphicon-heart" aria-hidden="true"></span> </a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> </a></li>
             </ul>
@@ -65,23 +65,7 @@
 
 <div class="container">
     <article class="post col-md-7 col-md-offset-2">
-        <div id="create-filter">
-            <img id="create-filter-img" src="imgs/pic1.jpg" alt="image uploaded by user" class="img-responsive" />
 
-            Brightness <input id="brightness" data-slider-id='brightness-slider' type="text" data-slider-min="-50" data-slider-max="50" data-slider-step="1" data-slider-value="0"/>
-            Current Slider Value: <span id="ex6SliderVal">3</span></span>
-            <br/>
-
-            Contrast <input id="contrast" data-slider-id='contrast-slider' type="text" data-slider-min="-50" data-slider-max="50" data-slider-step="1" data-slider-value="0"/>
-
-            Grayscale
-            hue-rotate
-            invert
-            saturation
-            sepia
-            Blur<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
--->
-        </div>
     </article>
     <!-- uploaded image -->
     <article class="post col-md-7 col-md-offset-2" id="upload-article">
@@ -336,8 +320,102 @@
 
                 </div>
 
+                <div id="create-filter">
+                    <div id="create-filter">
+                        <img id="create-filter-img" src="imgs/pic1.jpg" alt="image uploaded by user" class="img-responsive"/>
+                        <!--<div id="controls">
+
+                            <div class="control-group col-xs-6">
+                                <label class="control-label"> Brightness </label>
+                                <div class="controls">
+                                    <input id="brightness" data-slider-id='brightness-slider' type="text"
+                                           data-slider-min="-50" data-slider-max="50" data-slider-step="1"
+                                           data-slider-value="0"/>
+                                </div>
+                                Current Slider Value: <span id="ex6SliderVal">3</span></span>
+                                <br/>
+                            </div>
 
 
+                            <div class="control-group col-xs-6">
+                                <label class="control-label" for="sepia">Sepia</label>
+                                <div class="controls">
+                                    <input type="range" data-default="0" value="0" min="0" max="1" step="0.1" id="sepia">
+                                    <p id="sepia_output" class="pull-right">sepia(0.7)</p>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div id="controls">
+                            <form class="form-horizontal">
+                                <div class="control-group col-xs-6">
+                                    <label class="control-label" for="brightness">Brightness</label>
+                                    <div class="controls">
+                                        <input type="range" data-default=0 value=0 min=-50 max=50 step=1 id="brightness"/>
+                                        <p id="brightness_output" class='pull-right'></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="control-group col-xs-6">
+                                    <label class="control-label" for="saturate">Saturate</label>
+                                    <div class="controls">
+                                        <input type="range" data-default=1 value=1 min=-100 max=100 step=1 id="saturate"/>
+                                        <p id="saturate_output" class='pull-right'></p>
+                                    </div>
+                                </div>
+
+                                <div class="control-group col-xs-6">
+                                    <label class="control-label" for="sepia">Sepia</label>
+                                    <div class="controls">
+                                        <input type="range" data-default=0 value=0 min=0 max=1 step=0.1 id="sepia" />
+                                        <p id="sepia_output" class='pull-right'></p>
+                                    </div>
+                                </div>
+
+                                <div class="control-group col-xs-6">
+                                    <label class="control-label" for="hue-rotate">Hue-rotate</label>
+                                    <div class="controls">
+                                        <input type="range" data-default=0 value=0 min=0 max=360 step=1 id="hue-rotate"/>
+                                        <p id="hue-rotate_output" class='pull-right'></p>
+                                    </div>
+                                </div>
+
+                                <!--
+                                <div class="control-group col-xs-6">
+                                    <label class="control-label" for="invert">Invert</label>
+                                    <div class="controls">
+                                        <input type="range" data-default=0 value=0 min=0 max=1 step=0.1 id="invert"/>
+                                        <p id="invert_output" class='pull-right'></p>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="control-group col-xs-6">
+                                    <label class="control-label" for="contrast">Contrast</label>
+                                    <div class="controls">
+                                        <input type="range" data-default=0 value=0 min=-50 max=50 step=1 id="contrast"/>
+                                        <p id="contrast_output" class='pull-right'></p>
+                                    </div>
+                                </div>
+                                <div class="control-group col-xs-6">
+                                    <label class="control-label" for="blur">Blur</label>
+                                    <div class="controls">
+                                        <input type="range" data-default=0 value=0 min=0 max=10 step=1 id="blur"/>
+                                        <p id="blur_output" class='pull-right'></p>
+                                    </div>
+                                </div>
+                                <div class="control-group col-xs-6">
+                                    <label class="control-label" for="reset">&nbsp;</label>
+                                    <div class="controls">
+                                        <a href='#' id='reset' class='btn btn-info'>Reset to defaults</a href='#'>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
 
                 <div id="share-to">
                     <div class="col-sm-2">
