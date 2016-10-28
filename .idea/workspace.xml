@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7c6d51e-ff01-494a-a516-a64bd5648309" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lucasgram.js" afterPath="$PROJECT_DIR$/js/lucasgram.js" />
     </list>
     <ignored path="lucasgram.iws" />
@@ -27,10 +28,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="321" column="29" selection-start-line="321" selection-start-column="29" selection-end-line="321" selection-end-column="46" />
+            <state relative-caret-position="231">
+              <caret line="292" column="32" selection-start-line="292" selection-start-column="32" selection-end-line="292" selection-end-column="49" />
               <folding>
-                <element signature="e#17415#17421#1" expanded="true" />
+                <element signature="e#17517#17523#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,21 +40,11 @@
       <file leaf-file-name="lucasgram.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/lucasgram.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="133" column="59" selection-start-line="133" selection-start-column="59" selection-end-line="133" selection-end-column="59" />
+            <state relative-caret-position="225">
+              <caret line="109" column="56" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
               <folding>
                 <element signature="e#0#46#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dropzone.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/dropzone.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -267,12 +258,12 @@
       <workItem from="1476996594092" duration="329000" />
       <workItem from="1476996976459" duration="8251000" />
       <workItem from="1477076538604" duration="4236000" />
-      <workItem from="1477329768685" duration="16408000" />
+      <workItem from="1477329768685" duration="22544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39029000" />
+    <option name="totallyTimeSpent" value="45165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -331,7 +322,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17415#17421#1" expanded="true" />
+            <element signature="e#17517#17523#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -351,7 +342,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17415#17421#1" expanded="true" />
+            <element signature="e#17517#17523#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -381,7 +372,7 @@
         <state relative-caret-position="3435">
           <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
           <folding>
-            <element signature="e#17415#17421#1" expanded="true" />
+            <element signature="e#17517#17523#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -401,7 +392,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17415#17421#1" expanded="true" />
+            <element signature="e#17517#17523#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -424,7 +415,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17415#17421#1" expanded="true" />
+            <element signature="e#17517#17523#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -503,26 +494,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/dropzone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="405" column="16" selection-start-line="405" selection-start-column="10" selection-end-line="405" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="321" column="29" selection-start-line="321" selection-start-column="29" selection-end-line="321" selection-end-column="46" />
+        <state relative-caret-position="231">
+          <caret line="292" column="32" selection-start-line="292" selection-start-column="32" selection-end-line="292" selection-end-column="49" />
           <folding>
-            <element signature="e#17415#17421#1" expanded="true" />
+            <element signature="e#17517#17523#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lucasgram.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="133" column="59" selection-start-line="133" selection-start-column="59" selection-end-line="133" selection-end-column="59" />
+        <state relative-caret-position="225">
+          <caret line="109" column="56" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
           <folding>
             <element signature="e#0#46#0" expanded="false" />
           </folding>

@@ -17,8 +17,6 @@
     <!-- CSSGram -->
     <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
 
-    <!-- Bootstrap Slider -->
-    <link rel="stylesheet" href="css/bootstrap-slider.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,6 +28,9 @@
 
 <body>
 <header class="header">
+    <div id="target">
+        Click here
+    </div>
 
     <div class="container">
         <div class="col-md-2 col-sm-4 col-xs-4 logo">
@@ -286,136 +287,128 @@
                     </form>
                 </div>
 
-                <div id="apply-filters">
-                    <img id="uploaded-image" src="" alt="image uploaded by user" class="img-responsive "/>
+                <div id="filter-or-edit">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#apply-filters">Filter</a></li>
+                        <li id="has-custom-filter"><a data-toggle="tab" href="#create-filter">Edit</a></li>
+                    </ul>
 
-                    <div id="filters" class="row">
-                        <div class="col-sm-3">
-                            <a href="#"><img id="filter-1" src="" alt="image uploaded by user"
-                                             class="uploaded-image-thumb img-responsive"/></a>
-                            <div class="filter-labe">Normal</div>
+                    <div class="tab-content">
+                        <div id="apply-filters" class="tab-pane fade in active">
+                            <img id="uploaded-image" src="" alt="image uploaded by user"
+                                 class="img-responsive "/>
+
+                            <div id="filters" class="row">
+                                <div class="col-sm-3">
+                                    <a href="#"><img id="filter-1" src="" alt="image uploaded by user"
+                                                     class="uploaded-image-thumb img-responsive"/></a>
+                                    <div class="filter-labe">Normal</div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <a href="#"><img id="filter-2" src="" alt="image uploaded by user"
+                                                     class="uploaded-image-thumb img-responsive brannan"/></a>
+                                    <div class="filter-labe">Brannan</div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <a href="#"><img id="filter-3" src="" alt="image uploaded by user"
+                                                     class="uploaded-image-thumb img-responsive inkwell"/></a>
+                                    <div class="filter-labe">Inkwell</div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <a href="#"><img id="filter-4" src="" alt="image uploaded by user"
+                                                     class="uploaded-image-thumb img-responsive _1977"/></a>
+                                    <div class="filter-labe">1977</div>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <div class="col-sm-3">
-                            <a href="#"><img id="filter-2" src="" alt="image uploaded by user"
-                                             class="uploaded-image-thumb img-responsive brannan"/></a>
-                            <div class="filter-labe">Brannan</div>
-                        </div>
 
-                        <div class="col-sm-3">
-                            <a href="#"><img id="filter-3" src="" alt="image uploaded by user"
-                                             class="uploaded-image-thumb img-responsive inkwell"/></a>
-                            <div class="filter-labe">Inkwell</div>
-                        </div>
+                        <div id="create-filter" class="tab-pane fade">
 
-                        <div class="col-sm-3">
-                            <a href="#"><img id="filter-4" src="" alt="image uploaded by user"
-                                             class="uploaded-image-thumb img-responsive _1977"/></a>
-                            <div class="filter-labe">1977</div>
+                            <img id="create-filter-img" src="imgs/pic1.jpg" alt="image uploaded by user"
+                                 class="uploaded-image img-responsive"/>
+                            <div id="controls">
+                                <form class="form-horizontal">
+                                    <div class="control-group col-xs-6">
+                                        <label class="control-label" for="brightness">Brightness</label>
+                                        <div class="controls">
+                                            <input type="range" data-default=0 value=0 min=-50 max=50 step=1
+                                                   id="brightness"/>
+                                            <p id="brightness_output" class='pull-right'></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="control-group col-xs-6">
+                                        <label class="control-label" for="saturate">Saturate</label>
+                                        <div class="controls">
+                                            <input type="range" data-default=1 value=1 min=-100 max=100 step=1
+                                                   id="saturate"/>
+                                            <p id="saturate_output" class='pull-right'></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group col-xs-6">
+                                        <label class="control-label" for="sepia">Sepia</label>
+                                        <div class="controls">
+                                            <input type="range" data-default=0 value=0 min=0 max=1 step=0.1 id="sepia"/>
+                                            <p id="sepia_output" class='pull-right'></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group col-xs-6">
+                                        <label class="control-label" for="hue-rotate">Hue-rotate</label>
+                                        <div class="controls">
+                                            <input type="range" data-default=0 value=0 min=0 max=360 step=1
+                                                   id="hue-rotate"/>
+                                            <p id="hue-rotate_output" class='pull-right'></p>
+                                        </div>
+                                    </div>
+
+                                    <!--
+                                    <div class="control-group col-xs-6">
+                                        <label class="control-label" for="invert">Invert</label>
+                                        <div class="controls">
+                                            <input type="range" data-default=0 value=0 min=0 max=1 step=0.1 id="invert"/>
+                                            <p id="invert_output" class='pull-right'></p>
+                                        </div>
+                                    </div> -->
+
+
+                                    <div class="control-group col-xs-6">
+                                        <label class="control-label" for="contrast">Contrast</label>
+                                        <div class="controls">
+                                            <input type="range" data-default=0 value=0 min=-50 max=50 step=1
+                                                   id="contrast"/>
+                                            <p id="contrast_output" class='pull-right'></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-xs-6">
+                                        <label class="control-label" for="blur">Blur</label>
+                                        <div class="controls">
+                                            <input type="range" data-default=0 value=0 min=0 max=10 step=1 id="blur"/>
+                                            <p id="blur_output" class='pull-right'></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-xs-6">
+                                        <label class="control-label" for="reset">&nbsp;</label>
+                                        <div class="controls">
+                                            <a href='#' id='reset' class='btn btn-info'>Reset to defaults</a href='#'>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="clearfix"></div>
+                            </div>
+
                         </div>
 
                     </div>
-
                 </div>
-
-                <div id="create-filter">
-                    <img id="create-filter-img" src="imgs/pic1.jpg" alt="image uploaded by user"
-                         class="img-responsive"/>
-                    <!--<div id="controls">
-
-                        <div class="control-group col-xs-6">
-                            <label class="control-label"> Brightness </label>
-                            <div class="controls">
-                                <input id="brightness" data-slider-id='brightness-slider' type="text"
-                                       data-slider-min="-50" data-slider-max="50" data-slider-step="1"
-                                       data-slider-value="0"/>
-                            </div>
-                            Current Slider Value: <span id="ex6SliderVal">3</span></span>
-                            <br/>
-                        </div>
-
-
-                        <div class="control-group col-xs-6">
-                            <label class="control-label" for="sepia">Sepia</label>
-                            <div class="controls">
-                                <input type="range" data-default="0" value="0" min="0" max="1" step="0.1" id="sepia">
-                                <p id="sepia_output" class="pull-right">sepia(0.7)</p>
-                            </div>
-                        </div>
-                    </div>-->
-                    <div id="controls">
-                        <form class="form-horizontal">
-                            <div class="control-group col-xs-6">
-                                <label class="control-label" for="brightness">Brightness</label>
-                                <div class="controls">
-                                    <input type="range" data-default=0 value=0 min=-50 max=50 step=1 id="brightness"/>
-                                    <p id="brightness_output" class='pull-right'></p>
-                                </div>
-                            </div>
-
-
-                            <div class="control-group col-xs-6">
-                                <label class="control-label" for="saturate">Saturate</label>
-                                <div class="controls">
-                                    <input type="range" data-default=1 value=1 min=-100 max=100 step=1 id="saturate"/>
-                                    <p id="saturate_output" class='pull-right'></p>
-                                </div>
-                            </div>
-
-                            <div class="control-group col-xs-6">
-                                <label class="control-label" for="sepia">Sepia</label>
-                                <div class="controls">
-                                    <input type="range" data-default=0 value=0 min=0 max=1 step=0.1 id="sepia"/>
-                                    <p id="sepia_output" class='pull-right'></p>
-                                </div>
-                            </div>
-
-                            <div class="control-group col-xs-6">
-                                <label class="control-label" for="hue-rotate">Hue-rotate</label>
-                                <div class="controls">
-                                    <input type="range" data-default=0 value=0 min=0 max=360 step=1 id="hue-rotate"/>
-                                    <p id="hue-rotate_output" class='pull-right'></p>
-                                </div>
-                            </div>
-
-                            <!--
-                            <div class="control-group col-xs-6">
-                                <label class="control-label" for="invert">Invert</label>
-                                <div class="controls">
-                                    <input type="range" data-default=0 value=0 min=0 max=1 step=0.1 id="invert"/>
-                                    <p id="invert_output" class='pull-right'></p>
-                                </div>
-                            </div> -->
-
-
-                            <div class="control-group col-xs-6">
-                                <label class="control-label" for="contrast">Contrast</label>
-                                <div class="controls">
-                                    <input type="range" data-default=0 value=0 min=-50 max=50 step=1 id="contrast"/>
-                                    <p id="contrast_output" class='pull-right'></p>
-                                </div>
-                            </div>
-                            <div class="control-group col-xs-6">
-                                <label class="control-label" for="blur">Blur</label>
-                                <div class="controls">
-                                    <input type="range" data-default=0 value=0 min=0 max=10 step=1 id="blur"/>
-                                    <p id="blur_output" class='pull-right'></p>
-                                </div>
-                            </div>
-                            <div class="control-group col-xs-6">
-                                <label class="control-label" for="reset">&nbsp;</label>
-                                <div class="controls">
-                                    <a href='#' id='reset' class='btn btn-info'>Reset to defaults</a href='#'>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="clearfix"></div>
-                </div>
-
-
-
 
 
                 <div id="share-to">
@@ -442,6 +435,7 @@
 
             </div>
             <div class="modal-footer">
+
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-primary pull-right" data-toggle="tooltip" data-placement="top"
                         title="Upload an image first" id="next-button">Next &raquo;</button>
