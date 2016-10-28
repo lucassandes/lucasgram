@@ -6867,6 +6867,13 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.modal #filters {
+  margin-top: 15px;
+}
+.modal #filters .filter-label {
+  color: #777777;
+  text-align: center;
+}
 article {
   margin-bottom: 60px;
 }

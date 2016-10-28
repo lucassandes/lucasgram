@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>lucasgram . a simple instagram-like project</title>
+    <title>lucasgram . a simple backend-less-instagram-like project</title>
 
     <!-- Bootstrap -->
     <link href="css/custom.css" rel="stylesheet">
@@ -15,7 +15,7 @@
     <link href="css/dropzone.css" rel="stylesheet">
 
     <!-- CSSGram -->
-    <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css">
 
     <!-- Perfect icons -->
     <link rel="stylesheet" href="css/perfect-icons.css">
@@ -55,9 +55,9 @@
                         <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></a>
                 </li>
 
-                <li>
-                    <a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> </a>
-                </li>
+                <!-- <li>
+                     <a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> </a>
+                 </li> -->
                 <li>
                     <a href="#" data-toggle="modal" data-target="#about-modal">
                         <span class="glyphicon glyphicon-user" aria-hidden="true"></span> </a></li>
@@ -152,7 +152,7 @@
             <hr/>
             <section>
                 <div class="col-sm-1 col-xs-2 heart-icon">
-                    <span class="glyphicon glyphicon-heart heart-full" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-heart " aria-hidden="true"></span>
                 </div>
                 <div class="col-sm-11 col-xs-10">
                     <input type="text" class="no-border" placeholder="Adicione um comentário...">
@@ -271,37 +271,57 @@
 </div>
 
 
-
 <!-- about modal -->
 <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="aboutModalLabel">About</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="aboutModalLabel">About this site</h4>
             </div>
             <div class="modal-body">
+
+                <div class="col-xs-12">
+                    <h4>A simple backend-less project to show the cababilities of CSS filters</h4>
+                    <p>This is a small project, inspired by <a href="https://www.instagram.com/" target="_blank">Instagram</a>,
+                        developed for the Multimedia course held at UNIFESP, during the Spring of 2016. You can
+                        check out the source code on <a href="https://github.com/lucassandes/lucasgram" target="_blank">GitHub.</a>
+                    </p>
+                    <p>Special thanks to <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>,
+                        <a href="http://www.dropzonejs.com/" target="_blank">DropzoneJS</a>,
+                        <a href="https://github.com/una/CSSgram" target="_blank">CSSgram</a> and
+                        <a href="http://perfecticons.com/" target="_blank">Perfect Icons</a>.</p>
+                </div>
+                <div class="clearfix"></div>
+                <hr/>
                 <div class="col-xs-3">
                     <img src="imgs/profile1.jpg" class="img-responsive img-circle profile-thumb" alt="profile picture"/>
                 </div>
                 <div class="col-xs-9">
+                    <h4>Lucas Sandes</h4>
+                    <p>CS Student @ UNIFESP</p>
                     <ul class="soc">
-                        <li><a class="soc-facebook" href="https://www.facebook.com/lucas.sandes14"></a></li>
-                        <li><a class="soc-instagram" href="https://www.instagram.com/lucas_sandes/"></a></li>
-                        <li><a class="soc-github" href="https://github.com/lucassandes"></a></li>
-                        <li><a class="soc-twitter" href="https://twitter.com/LucasSandes"></a></li>
-                        <li><a class="soc-linkedin soc-icon-last" href="https://br.linkedin.com/in/lucas-sandes-79010031"></a></li>
+                        <li><a class="soc-facebook" href="https://www.facebook.com/lucas.sandes14" target="_blank"></a></li>
+                        <li><a class="soc-instagram" href="https://www.instagram.com/lucas_sandes/" target="_blank"></a></li>
+                        <li><a class="soc-github" href="https://github.com/lucassandes" target="_blank"></a></li>
+                        <li><a class="soc-twitter" href="https://twitter.com/LucasSandes" target="_blank"></a></li>
+                        <li><a class="soc-linkedin soc-icon-last"
+                               href="https://br.linkedin.com/in/lucas-sandes-79010031" target="_blank"></a></li>
                     </ul>
                 </div>
+
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+
+
+
+            <div class="clearfix"></div>
+            <hr/>
+
+
         </div>
     </div>
 </div>
-
 
 
 <!-- Uploader Modal -->
@@ -332,6 +352,7 @@
 
                     <div class="tab-content">
                         <div id="apply-filters" class="tab-pane fade in active">
+
                             <img id="uploaded-image" src="" alt="image uploaded by user"
                                  class="img-responsive "/>
 
@@ -339,25 +360,25 @@
                                 <div class="col-sm-3">
                                     <a href="#"><img id="filter-1" src="" alt="image uploaded by user"
                                                      class="uploaded-image-thumb img-responsive"/></a>
-                                    <div class="filter-labe">Normal</div>
+                                    <div class="filter-label">Normal</div>
                                 </div>
 
                                 <div class="col-sm-3">
                                     <a href="#"><img id="filter-2" src="" alt="image uploaded by user"
                                                      class="uploaded-image-thumb img-responsive brannan"/></a>
-                                    <div class="filter-labe">Brannan</div>
+                                    <div class="filter-label">Brannan</div>
                                 </div>
 
                                 <div class="col-sm-3">
                                     <a href="#"><img id="filter-3" src="" alt="image uploaded by user"
                                                      class="uploaded-image-thumb img-responsive inkwell"/></a>
-                                    <div class="filter-labe">Inkwell</div>
+                                    <div class="filter-label">Inkwell</div>
                                 </div>
 
                                 <div class="col-sm-3">
                                     <a href="#"><img id="filter-4" src="" alt="image uploaded by user"
-                                                     class="uploaded-image-thumb img-responsive _1977"/></a>
-                                    <div class="filter-labe">1977</div>
+                                                     class="uploaded-image-thumb img-responsive walden"/></a>
+                                    <div class="filter-label">Walden</div>
                                 </div>
 
                             </div>
@@ -473,7 +494,8 @@
                 <div id="upload-done">
                     <h3>You already made your upload :)</h3>
                     <p> This is just a small backend-less project that doesn't handle well a lot of iterations. If you
-                        wanna play with it again, try <a href="javascript:document.location.reload(true);" >reloading the page.</a></p>
+                        wanna play with it again, try <a href="javascript:document.location.reload(true);">reloading the
+                            page.</a></p>
                 </div>
 
             </div>

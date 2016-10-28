@@ -54,6 +54,9 @@ uploader.on('success', function (file, resp) {
 
     var uploadedImage = 'uploads/' + file.name;
     $("#next-button").click(function () {
+
+        $("#next-button").removeAttr('title').removeAttr('data-original-title');
+
         $("#uploaded-image").attr('src', uploadedImage);
         $(".uploaded-image-thumb").attr('src', uploadedImage);
 
@@ -84,8 +87,8 @@ uploader.on('success', function (file, resp) {
 
         //_1977
         $("#filter-4").click(function () {
-            $("#uploaded-image").removeClass().addClass('img-responsive _1977');
-            appliedFilter = '_1977';
+            $("#uploaded-image").removeClass().addClass('img-responsive walden');
+            appliedFilter = 'walden';
         });
 
         //aden
@@ -131,7 +134,7 @@ uploader.on('success', function (file, resp) {
                 $("#share-to").hide();
                 $("#upload-done").show();
 
-                $("#myModalLabel").html('Share');
+                $("#myModalLabel").html('Upload done!');
 
                 $("#upload-article").fadeIn("slow", function () {
                     // Animation complete

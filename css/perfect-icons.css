@@ -51,10 +51,10 @@
     display:block;
     position: relative;
     z-index: 1;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    font-size: 23px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 19px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
