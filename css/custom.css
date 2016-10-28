@@ -6862,6 +6862,11 @@ body {
   font-size: 20px;
   margin-top: 5px;
 }
+.modal .nav-tabs > li {
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+}
 article {
   margin-bottom: 60px;
 }

@@ -11,6 +11,7 @@ function startModal() {
     $("#filter-or-edit").hide();
     $("#share-to").hide();
     $("#upload-article").hide();
+    $("#upload-done").hide();
 }
 
 //disable button until user uploads img
@@ -58,7 +59,7 @@ uploader.on('success', function (file, resp) {
 
         $("#my-dropzone").hide();
         $("#filter-or-edit").show();
-        $("#myModalLabel").html('Chose a filter or <a href="#" id="create-filter-btn">create your own!</a>');
+        $("#myModalLabel").html('Chose a filter or create your own!');
 
         //apply filters
 
@@ -109,6 +110,7 @@ uploader.on('success', function (file, resp) {
             var pictureToShare = $("#picture-to-share").attr('src', uploadedImage);
             applyFilter(pictureToShare, isCustomFilter);
             $("#myModalLabel").html('Share');
+            $("#next-button").html('Share');
             $("#filter-or-edit").hide();
             $("#share-to").show();
 
@@ -122,6 +124,14 @@ uploader.on('success', function (file, resp) {
                 $("#upload-caption").html(caption);
 
                 applyFilter(uploadedImage, isCustomFilter);
+
+                $("#upload-area").hide();
+
+                $("#next-button").hide();
+                $("#share-to").hide();
+                $("#upload-done").show();
+
+                $("#myModalLabel").html('Share');
 
                 $("#upload-article").fadeIn("slow", function () {
                     // Animation complete

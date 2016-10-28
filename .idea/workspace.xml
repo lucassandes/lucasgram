@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7c6d51e-ff01-494a-a516-a64bd5648309" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/perfect-icons.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lucasgram.js" afterPath="$PROJECT_DIR$/js/lucasgram.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/custom.less" afterPath="$PROJECT_DIR$/less/custom.less" />
     </list>
     <ignored path="lucasgram.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,20 +31,30 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="292" column="32" selection-start-line="292" selection-start-column="32" selection-end-line="292" selection-end-column="49" />
+            <state relative-caret-position="300">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
               <folding>
-                <element signature="e#17517#17523#1" expanded="true" />
+                <element signature="e#10333#10340#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lucasgram.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="perfect-icons.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/perfect-icons.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lucasgram.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/lucasgram.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="109" column="56" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
+              <caret line="112" column="27" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
               <folding>
                 <element signature="e#0#46#0" expanded="false" />
               </folding>
@@ -55,6 +68,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -69,8 +83,9 @@
         <option value="$PROJECT_DIR$/testing_filters.php" />
         <option value="$PROJECT_DIR$/less/custom.less" />
         <option value="$PROJECT_DIR$/lucasgram.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/lucasgram.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/perfect-icons.css" />
       </list>
     </option>
   </component>
@@ -157,6 +172,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucasgram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucasgram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -174,6 +203,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/less" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SearchEverywhereHistoryKey" value="ind&#9;FILE&#9;file:///Applications/MAMP/htdocs/lucasgram/index.html&#10;custom.le&#9;FILE&#9;file:///Applications/MAMP/htdocs/lucasgram/less/custom.less&#10;cu&#9;FILE&#9;file:///Applications/MAMP/htdocs/lucasgram/css/custom.css" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -258,12 +288,12 @@
       <workItem from="1476996594092" duration="329000" />
       <workItem from="1476996976459" duration="8251000" />
       <workItem from="1477076538604" duration="4236000" />
-      <workItem from="1477329768685" duration="22544000" />
+      <workItem from="1477329768685" duration="25496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45165000" />
+    <option name="totallyTimeSpent" value="48117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -322,7 +352,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17517#17523#1" expanded="true" />
+            <element signature="e#10333#10340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -342,7 +372,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17517#17523#1" expanded="true" />
+            <element signature="e#10333#10340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -372,7 +402,7 @@
         <state relative-caret-position="3435">
           <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
           <folding>
-            <element signature="e#17517#17523#1" expanded="true" />
+            <element signature="e#10333#10340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -392,7 +422,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17517#17523#1" expanded="true" />
+            <element signature="e#10333#10340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -415,7 +445,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17517#17523#1" expanded="true" />
+            <element signature="e#10333#10340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -500,23 +530,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/lucasgram.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="292" column="32" selection-start-line="292" selection-start-column="32" selection-end-line="292" selection-end-column="49" />
+        <state relative-caret-position="225">
+          <caret line="112" column="27" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
           <folding>
-            <element signature="e#17517#17523#1" expanded="true" />
+            <element signature="e#0#46#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lucasgram.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="109" column="56" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
+        <state relative-caret-position="300">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding>
-            <element signature="e#0#46#0" expanded="false" />
+            <element signature="e#10333#10340#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/perfect-icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

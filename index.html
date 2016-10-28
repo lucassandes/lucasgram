@@ -17,6 +17,9 @@
     <!-- CSSGram -->
     <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
 
+    <!-- Perfect icons -->
+    <link rel="stylesheet" href="css/perfect-icons.css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,10 +31,6 @@
 
 <body>
 <header class="header">
-    <div id="target">
-        Click here
-    </div>
-
     <div class="container">
         <div class="col-md-2 col-sm-4 col-xs-4 logo">
             <img src="imgs/lucasgram.png" class="img-responsive" alt="lucasgram"/>
@@ -49,17 +48,22 @@
         </div>
 
 
-        <div class="col-md-3  col-sm-4 menu col-xs-8 ">
+        <div class="col-md-3  col-sm-4  col-xs-8 menu">
             <ul>
                 <li>
                     <a href="#uploadModal" data-toggle="modal" data-target="#uploadModal">
                         <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></a>
                 </li>
-                <li><a href="#"><span
-                        class="glyphicon glyphicon-heart" aria-hidden="true"></span> </a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> </a></li>
+
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#about-modal">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> </a></li>
             </ul>
         </div>
+
 
     </div>
 </header>
@@ -267,7 +271,40 @@
 </div>
 
 
-<!-- Modal -->
+
+<!-- about modal -->
+<div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="aboutModalLabel">About</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-xs-3">
+                    <img src="imgs/profile1.jpg" class="img-responsive img-circle profile-thumb" alt="profile picture"/>
+                </div>
+                <div class="col-xs-9">
+                    <ul class="soc">
+                        <li><a class="soc-facebook" href="https://www.facebook.com/lucas.sandes14"></a></li>
+                        <li><a class="soc-instagram" href="https://www.instagram.com/lucas_sandes/"></a></li>
+                        <li><a class="soc-github" href="https://github.com/lucassandes"></a></li>
+                        <li><a class="soc-twitter" href="https://twitter.com/LucasSandes"></a></li>
+                        <li><a class="soc-linkedin soc-icon-last" href="https://br.linkedin.com/in/lucas-sandes-79010031"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Uploader Modal -->
 <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -339,7 +376,7 @@
                                         <div class="controls">
                                             <input type="range" data-default=0 value=0 min=-50 max=50 step=1
                                                    id="brightness"/>
-                                            <p id="brightness_output" class='pull-right'></p>
+                                            <!--<p id="brightness_output" class='pull-right'></p> -->
                                         </div>
                                     </div>
 
@@ -349,7 +386,7 @@
                                         <div class="controls">
                                             <input type="range" data-default=1 value=1 min=-100 max=100 step=1
                                                    id="saturate"/>
-                                            <p id="saturate_output" class='pull-right'></p>
+                                            <!--<p id="saturate_output" class='pull-right'></p> -->
                                         </div>
                                     </div>
 
@@ -357,7 +394,7 @@
                                         <label class="control-label" for="sepia">Sepia</label>
                                         <div class="controls">
                                             <input type="range" data-default=0 value=0 min=0 max=1 step=0.1 id="sepia"/>
-                                            <p id="sepia_output" class='pull-right'></p>
+                                            <!--<p id="sepia_output" class='pull-right'></p> -->
                                         </div>
                                     </div>
 
@@ -366,7 +403,7 @@
                                         <div class="controls">
                                             <input type="range" data-default=0 value=0 min=0 max=360 step=1
                                                    id="hue-rotate"/>
-                                            <p id="hue-rotate_output" class='pull-right'></p>
+                                            <!--<p id="hue-rotate_output" class='pull-right'></p> -->
                                         </div>
                                     </div>
 
@@ -385,22 +422,22 @@
                                         <div class="controls">
                                             <input type="range" data-default=0 value=0 min=-50 max=50 step=1
                                                    id="contrast"/>
-                                            <p id="contrast_output" class='pull-right'></p>
+                                            <!--<p id="contrast_output" class='pull-right'></p> -->
                                         </div>
                                     </div>
                                     <div class="control-group col-xs-6">
                                         <label class="control-label" for="blur">Blur</label>
                                         <div class="controls">
                                             <input type="range" data-default=0 value=0 min=0 max=10 step=1 id="blur"/>
-                                            <p id="blur_output" class='pull-right'></p>
+                                            <!--<p id="blur_output" class='pull-right'></p> -->
                                         </div>
                                     </div>
-                                    <div class="control-group col-xs-6">
+                                    <!--<div class="control-group col-xs-6">
                                         <label class="control-label" for="reset">&nbsp;</label>
                                         <div class="controls">
                                             <a href='#' id='reset' class='btn btn-info'>Reset to defaults</a href='#'>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </form>
                                 <div class="clearfix"></div>
                             </div>
@@ -433,7 +470,14 @@
                     <div class="clearfix"></div>
                 </div>
 
+                <div id="upload-done">
+                    <h3>You already made your upload :)</h3>
+                    <p> This is just a small backend-less project that doesn't handle well a lot of iterations. If you
+                        wanna play with it again, try <a href="javascript:document.location.reload(true);" >reloading the page.</a></p>
+                </div>
+
             </div>
+
             <div class="modal-footer">
 
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -451,9 +495,6 @@
 
 <!-- dropzone -->
 <script src="js/dropzone.js"></script>
-
-<!-- Slider for Bootstrap -->
-<script src="js/bootstrap-slider.min.js"></script>
 
 <!-- lucasgram -->
 <script src="js/lucasgram.js"></script>
